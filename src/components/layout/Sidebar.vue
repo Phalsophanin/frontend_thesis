@@ -21,13 +21,13 @@
 
         <div class="space-y-2">
           <a href="#"
-            class="flex items-center gap-3 px-4 py-3 bg-[#3399ff] text-white rounded-lg font-bold text-xs shadow-[0_4px_10px_rgba(51,153,255,0.2)] transition-all uppercase">
+            class="flex items-center gap-3 px-4 py-3 bg-white  border-gray-200 rounded-lg text-gray-500 hover:border-[#3399ff] hover:text-[#ff3333] transition-all text-xs font-bold uppercase ">
             <LayoutDashboard :size="18" stroke-width="2.5" />
             Dashboard
           </a>
           <button @click="openTeacher = !openTeacher"
-            class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
-            :class="openTeacher ? 'border-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
+            class="w-full flex items-center gap-3 px-4 py-3 bg-white  rounded-lg transition-all text-xs font-bold uppercase tracking-wide"
+            :class="openTeacher ? 'borde r-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
             <GraduationCap :size="18" />
             <span>Teachers</span>
             <ChevronDown :size="14" class="ml-auto transition-transform" :class="{ 'rotate-180': openTeacher }" />
@@ -41,7 +41,7 @@
           </div>
           <div class="space-y-2">
             <button @click="openClass = !openClass"
-              class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg text-gray-500 transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
+              class="w-full flex items-center gap-3 px-4 py-3 bg-white rounded-lg text-gray-500 transition-all text-xs font-bold uppercase tracking-wide"
               :class="openClass ? 'border-[#99cc66] ring-1 ring-[#99cc66] text-[#99cc66]' : 'border-gray-200 text-gray-500'">
               <BookOpen :size="18" />
               <span>Class</span>
@@ -60,7 +60,7 @@
       </div>
       <div class="space-y-2">
         <button @click="openStudent = !openStudent"
-          class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
+          class="w-full flex items-center gap-3 px-4 py-3 bg-white rounded-lg transition-all text-xs font-bold uppercase tracking-wide"
           :class="openStudent ? 'border-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
           <GraduationCap :size="18" />
           <span>Students</span>
@@ -73,23 +73,23 @@
             New</a>
         </div>
         <a href="#"
-          class="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-500 hover:border-[#3399ff] hover:text-[#3399ff] transition-all text-xs font-bold uppercase shadow-sm">
+          class="flex items-center gap-3 px-4 py-3 bg-white  border-gray-200 rounded-lg text-gray-500 hover:border-[#3399ff] hover:text-[#3399ff] transition-all text-xs font-bold uppercase ">
           <ClipboardCheck :size="18" />
           Results
         </a>
         <a href="#"
-          class="flex items-center gap-3 px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-500 hover:border-[#ff3333] hover:text-[#ff3333] transition-all text-xs font-bold uppercase shadow-sm">
+          class="flex items-center gap-3 px-4 py-3 bg-white  border-gray-200 rounded-lg text-gray-500 hover:border-[#ff3333] hover:text-[#ff3333] transition-all text-xs font-bold uppercase ">
           <ClipboardCheck :size="18" />
           Attendance
         </a>
       </div>
 
-      <div class="space-y-3">
+      <div class="space-y-1">
         <label class="block text-[10px] font-bold text-gray-400 uppercase tracking-widest px-1">University</label>
 
         <div class="space-y-2">
           <button @click="openUni = !openUni"
-            class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
+            class="w-full flex items-center gap-3 px-4 py-3 bg-white rounded-lg transition-all text-xs font-bold uppercase tracking-wide "
             :class="openUni ? 'border-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
             <GraduationCap :size="18" />
             <span>Students</span>
@@ -102,7 +102,7 @@
             New</a>
         </div>
           <button @click="openresult = !openresult"
-            class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
+            class="w-full flex items-center gap-3 px-4 py-3 bg-white rounded-lg transition-all text-xs font-bold uppercase tracking-wide "
             :class="openresult ? 'border-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
             <GraduationCap :size="18" />
             <span>Results</span>
@@ -115,7 +115,7 @@
             New</a>
         </div>
           <button @click="openattendent = !openattendent"
-            class="w-full flex items-center gap-3 px-4 py-3 bg-white border rounded-lg transition-all text-xs font-bold uppercase tracking-wide shadow-sm"
+            class="w-full flex items-center gap-3 px-4 py-3 bg-white rounded-lg transition-all text-xs font-bold uppercase tracking-wide "
             :class="openattendent ? 'border-[#ffcc33] ring-1 ring-[#ffcc33] text-[#ffcc33]' : 'border-gray-200 text-gray-500'">
             <GraduationCap :size="18" />
             <span>Attendance</span>
