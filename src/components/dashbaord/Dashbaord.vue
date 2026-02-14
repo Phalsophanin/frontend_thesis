@@ -10,7 +10,7 @@
           <h1 class="text-2xl font-black text-slate-800 tracking-tight">Dashboard</h1>
         
         </div>
-      </div>
+      </div>  
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div v-for="(stat, i) in stats" :key="i"
@@ -50,7 +50,7 @@
             {{ day }}
           </div>
 
-          <div v-for="date in daysInMonth" :key="date"
+          <div v-for="date in daysInMonth" :key="date"  
                class="relative py-2.5 text-xs font-bold rounded-xl transition-all cursor-pointer mx-0.5"
                :class="{
                  'bg-[#3399ff] text-white shadow-md shadow-blue-200 scale-105 z-10': date === selectedDay,
